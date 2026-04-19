@@ -15,6 +15,9 @@ update-all:
   cd templates/noflake && npins update den
   just all update
 
+update-nix-effects:
+  cd templates/ci && nix flake update nix-effects
+
 docs:
   cd docs && pnpm run dev
 
